@@ -2,83 +2,78 @@
 <html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Accelith Kinetic &#8212; Track Record</title>
 <style>
-@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Lora:wght@500;600&display=swap');
-:root{--navy:#0D1F3C;--steel:#5A7099;--muted:#9AACBE;--bord:#e8e4dc;--bg:#f6f4ef;--pos:#2A6E49;--neg:#B03020;--bench:#A8B7C9;}
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap');
+:root{--navy:#0D1F3C;--steel:#5A7099;--muted:#9AACBE;--bord:#e8e4dc;--bg:#f6f4ef;--pos:#2A6E49;--neg:#B03020;}
 *{box-sizing:border-box;}
 body{margin:0;background:var(--bg);font-family:'DM Sans',system-ui,-apple-system,sans-serif;color:var(--navy);}
-.kin{margin:0;padding:4px 0 0;}
-.kin h1{font-family:'Lora',Georgia,serif;font-size:26px;font-weight:600;margin:0 0 10px;letter-spacing:-0.01em;}
-.kin .lbl{font-size:10px;letter-spacing:.1em;text-transform:uppercase;color:var(--steel);margin:0 0 22px;}
-.kin .hero{display:flex;align-items:baseline;gap:14px;flex-wrap:wrap;margin-bottom:26px;}
-.kin .hero .big{font-family:'Lora',Georgia,serif;font-size:52px;font-weight:600;line-height:1;font-variant-numeric:tabular-nums;}
+.kin{margin:0;padding:0;}
+.kin .lbl{font-size:10px;letter-spacing:.1em;text-transform:uppercase;color:var(--steel);margin:16px 0 20px;}
+.kin .hero{display:flex;align-items:baseline;gap:14px;flex-wrap:wrap;margin-bottom:24px;}
+.kin .hero .big{font-family:'Playfair Display',Georgia,serif;font-size:46px;font-weight:700;line-height:1;font-variant-numeric:tabular-nums;}
 .kin .hero .big.pos{color:var(--pos);}
 .kin .hero .big.neg{color:var(--neg);}
 .kin .hero .vs{font-size:15px;color:var(--steel);font-variant-numeric:tabular-nums;}
-.kin .pills{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:34px;}
-.kin .pill{flex:1 1 150px;min-width:130px;padding:14px 16px;border:1px solid var(--bord);border-radius:4px;}
-.kin .pill .pl{font-size:10px;letter-spacing:.08em;text-transform:uppercase;color:var(--steel);margin-bottom:8px;}
-.kin .pill .pv{font-size:18px;font-weight:600;color:var(--navy);font-variant-numeric:tabular-nums;line-height:1;}
+.kin .pills{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:36px;}
+.kin .pill{flex:1 1 110px;min-width:90px;padding:12px 16px;border:1px solid var(--bord);border-radius:4px;}
+.kin .pill .pl{font-size:10px;letter-spacing:.08em;text-transform:uppercase;color:var(--steel);margin-bottom:6px;}
+.kin .pill .pv{font-size:18px;font-weight:700;color:var(--navy);font-variant-numeric:tabular-nums;line-height:1;}
 .kin .pill .pv.pos{color:var(--pos);}
 .kin .pill .pv.neg{color:var(--neg);}
 .kin .cap{font-size:10px;letter-spacing:.1em;text-transform:uppercase;color:var(--steel);margin-bottom:10px;}
-.kin .chartbox{position:relative;height:360px;margin-bottom:14px;}
-.kin .legend{display:flex;gap:24px;justify-content:center;margin-bottom:26px;}
+.kin .chartbox{position:relative;height:220px;margin-bottom:14px;}
+.kin .legend{display:flex;gap:24px;justify-content:center;margin-bottom:20px;}
 .kin .legend div{display:flex;align-items:center;gap:7px;font-size:11px;color:var(--steel);}
-.kin .legend span{width:13px;height:13px;display:inline-block;}
-.kin .disc{font-size:11px;color:var(--muted);line-height:1.6;border-top:1px solid var(--bord);padding-top:14px;}
+.kin .disc{font-size:11px;color:var(--muted);line-height:1.6;}
 </style></head>
 <body><div class="kin">
-<h1>Kinetic Performance</h1>
-<div class="lbl">Accelith Kinetic &#183; Model Track Record &#183; Since July 20, 2026</div>
-<div class="hero"><div class="big neg">−3.0%</div><div class="vs">vs SPY +3.5%</div></div>
-<div class="pills"><div class="pill"><div class="pl">Alpha vs SPY</div><div class="pv neg">−6.4%</div></div><div class="pill"><div class="pl">Positive Months</div><div class="pv">0 / 1</div></div><div class="pill"><div class="pl">Best Month</div><div class="pv neg">−3.0%</div></div><div class="pill"><div class="pl">Worst Month</div><div class="pv neg">−3.0%</div></div></div>
+<div class="lbl">Accelith Kinetic &nbsp;&#183;&nbsp; Model Track Record &nbsp;&#183;&nbsp; Since July 20, 2026</div>
+<div class="hero"><span class="big neg">−3.0%</span><span class="vs">vs SPY +3.5%</span></div>
+<div class="pills"><div class="pill"><div class="pl">Alpha vs SPY</div><div class="pv neg">−6.4%</div></div><div class="pill"><div class="pl">Positive Months</div><div class="pv">0 / 1</div></div><div class="pill"><div class="pl">Best Month</div><div class="pv neg">−3.0%</div></div><div class="pill"><div class="pl">Worst Month</div><div class="pv neg">−3.0%</div></div></div>
 <div class="cap">Monthly Returns</div>
 <div class="chartbox"><canvas id="kin-bars"></canvas></div>
 <div class="legend">
-  <div><span style="background:#0D1F3C"></span>Accelith Kinetic</div>
-  <div><span style="background:#A8B7C9"></span>SPY (Benchmark)</div>
+  <div><svg width="14" height="10"><rect x="0" y="0" width="14" height="10" rx="2" fill="#0D1F3C"/></svg>Accelith Kinetic</div>
+  <div><svg width="14" height="10"><rect x="0" y="0" width="14" height="10" rx="2" fill="#9AACBE"/></svg>SPY (Benchmark)</div>
 </div>
 <div class="disc">Hypothetical model results of the published rules-based Accelith Kinetic strategy since inception on July 20, 2026. Each period runs from one monthly rebalancing date to the next and is labelled by its opening month; the current period is shown only once it closes. Returns are price returns of the twenty equally weighted model positions, gross, without dividends or transaction costs, benchmarked against the S&amp;P 500 (SPY). These are not actual trading results, do not reflect the returns of any actual account, and are not a reliable indicator of future results.</div>
 </div>
 <script>
 (function(){
-  var NAVY="#0D1F3C",BENCH="#A8B7C9",STEEL="#5A7099",BORD="#e8e4dc",BG="#f6f4ef";
+  var NAVY="#0D1F3C",MUTED="#9AACBE",STEEL="#5A7099",BORD="#e8e4dc",BG="#f6f4ef";
   var labels=["Jul '26"], kdata=[-2.97], sdata=[3.47];
-  var valueLabels={id:"valueLabels",afterDatasetsDraw:function(c){
-    var t=c.ctx;t.save();
-    t.font="500 11px 'DM Sans', sans-serif";t.textAlign="center";
-    c.data.datasets.forEach(function(ds,di){
-      var meta=c.getDatasetMeta(di);
-      t.fillStyle=di===0?NAVY:STEEL;
-      meta.data.forEach(function(bar,i){
-        var v=ds.data[i];if(v===null||v===undefined)return;
-        var txt=(v>=0?"+":"\u2212")+Math.abs(v).toFixed(1)+"%";
-        t.textBaseline=v>=0?"bottom":"top";
-        t.fillText(txt,bar.x,v>=0?bar.y-5:bar.y+5);
+  var barLabelPlugin={id:"ackBarLabels",afterDatasetsDraw:function(chart){
+    var ctx=chart.ctx;ctx.save();ctx.textAlign="center";
+    ctx.font="9px DM Sans, system-ui, sans-serif";
+    chart.data.datasets.forEach(function(ds,di){
+      var meta=chart.getDatasetMeta(di);if(meta.hidden)return;
+      meta.data.forEach(function(bar,ji){
+        var v=ds.data[ji];if(v===null||v===undefined)return;
+        ctx.fillStyle=di===0?NAVY:STEEL;
+        var txt=(v>=0?"+":"−")+Math.abs(v).toFixed(1)+"%";
+        ctx.fillText(txt,bar.x,v>=0?bar.y-5:bar.y+11);
       });
     });
-    t.restore();}};
+    ctx.restore();}};
   function build(){
     new Chart(document.getElementById("kin-bars"),{
-      type:"bar",plugins:[valueLabels],
+      type:"bar",plugins:[barLabelPlugin],
       data:{labels:labels,datasets:[
-        {label:"Accelith Kinetic",data:kdata,backgroundColor:NAVY,barPercentage:0.62,categoryPercentage:0.62,maxBarThickness:46},
-        {label:"SPY",data:sdata,backgroundColor:BENCH,barPercentage:0.62,categoryPercentage:0.62,maxBarThickness:46}
+        {label:"Accelith Kinetic",data:kdata,backgroundColor:NAVY,borderRadius:2,borderSkipped:false,maxBarThickness:46},
+        {label:"SPY",data:sdata,backgroundColor:MUTED,borderRadius:2,borderSkipped:false,maxBarThickness:46}
       ]},
       options:{responsive:true,maintainAspectRatio:false,
-        layout:{padding:{top:22,bottom:6}},
-        interaction:{intersect:false,mode:"index"},
+        layout:{padding:{top:18,bottom:4}},
         plugins:{legend:{display:false},
           tooltip:{backgroundColor:BG,titleColor:NAVY,bodyColor:STEEL,borderColor:BORD,borderWidth:1,
-            padding:10,titleFont:{weight:"600",size:12},bodyFont:{size:12},
+            titleFont:{weight:"600",size:12},bodyFont:{size:12},padding:10,
             callbacks:{label:function(ctx){var v=ctx.parsed.y;
               return ctx.dataset.label+": "+(v>=0?"+":"")+v.toFixed(1)+"%";}}}},
         scales:{
           x:{grid:{display:false},border:{display:false},
-             ticks:{color:STEEL,font:{size:12}}},
+             ticks:{color:STEEL,font:{size:10},maxRotation:0}},
           y:{grid:{color:BORD},border:{display:false},
              ticks:{color:STEEL,font:{size:10},
-               callback:function(v){return (v>0?"+":"")+v+"%";}}}}
+               callback:function(v){return (v>0?"+":"")+v.toFixed(0)+"%";}}}}
       }
     });
   }
