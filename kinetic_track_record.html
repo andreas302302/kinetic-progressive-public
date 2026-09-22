@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Accelith Kinetic &#8212; Track Record</title>
+<title>Accelith Kinetic Progressive &#8212; Track Record</title>
 <style>
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600&display=swap');
 :root{--navy:#0D1F3C;--steel:#5A7099;--muted:#9AACBE;--bord:#e8e4dc;--bg:#f6f4ef;--pos:#2A6E49;--neg:#B03020;}
@@ -32,7 +32,7 @@ body{margin:0;background:var(--bg);font-family:'DM Sans',system-ui,-apple-system
 <div class="cap">Monthly Returns</div>
 <div class="chartbox"><canvas id="kin-bars"></canvas></div>
 <div class="legend">
-  <div><svg width="14" height="10"><rect x="0" y="0" width="14" height="10" rx="2" fill="#0D1F3C"/></svg>Kinetic Progressive</div>
+  <div><svg width="14" height="10"><rect x="0" y="0" width="14" height="10" rx="2" fill="#0D1F3C"/></svg>Accelith Kinetic Progressive</div>
   <div><svg width="14" height="10"><rect x="0" y="0" width="14" height="10" rx="2" fill="#9AACBE"/></svg>SPY (Benchmark)</div>
 </div>
 <div class="disc">Hypothetical model results of the published rules-based Accelith Kinetic Progressive strategy since inception on July 20, 2026. Each period runs from one monthly rebalancing date to the next and is labelled by its opening month; the current period is shown only once it closes. Returns are price returns of the twenty equally weighted model positions, gross, without dividends or transaction costs, benchmarked against the S&amp;P 500 (SPY). These are not actual trading results, do not reflect the returns of any actual account, and are not a reliable indicator of future results.</div>
@@ -58,7 +58,7 @@ body{margin:0;background:var(--bg);font-family:'DM Sans',system-ui,-apple-system
     new Chart(document.getElementById("kin-bars"),{
       type:"bar",plugins:[barLabelPlugin],
       data:{labels:labels,datasets:[
-        {label:"Kinetic Progressive",data:kdata,backgroundColor:NAVY,borderRadius:2,borderSkipped:false,maxBarThickness:46},
+        {label:"Accelith Kinetic Progressive",data:kdata,backgroundColor:NAVY,borderRadius:2,borderSkipped:false,maxBarThickness:46},
         {label:"SPY",data:sdata,backgroundColor:MUTED,borderRadius:2,borderSkipped:false,maxBarThickness:46}
       ]},
       options:{responsive:true,maintainAspectRatio:false,
