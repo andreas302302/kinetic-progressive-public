@@ -27,8 +27,8 @@ body{margin:0;background:var(--bg);font-family:'DM Sans',system-ui,-apple-system
 </style></head>
 <body><div class="kin">
 <div class="lbl">Accelith Kinetic Progressive &nbsp;&#183;&nbsp; Model Track Record &nbsp;&#183;&nbsp; Since July 20, 2026</div>
-<div class="hero"><span class="big neg">−7.8%</span><span class="vs">vs SPY +3.1%</span></div>
-<div class="pills"><div class="pill"><div class="pl">Alpha vs SPY</div><div class="pv neg">−11.0%</div></div><div class="pill"><div class="pl">Positive Months</div><div class="pv">0 / 3</div></div><div class="pill"><div class="pl">Best Month</div><div class="pv neg">−2.2%</div></div><div class="pill"><div class="pl">Worst Month</div><div class="pv neg">−3.0%</div></div></div>
+<div class="hero"><span class="big neg">−7.7%</span><span class="vs">vs SPY +3.5%</span></div>
+<div class="pills"><div class="pill"><div class="pl">Alpha vs SPY</div><div class="pv neg">−11.2%</div></div><div class="pill"><div class="pl">Positive Months</div><div class="pv">0 / 3</div></div><div class="pill"><div class="pl">Best Month</div><div class="pv neg">−2.1%</div></div><div class="pill"><div class="pl">Worst Month</div><div class="pv neg">−3.0%</div></div></div>
 <div class="cap">Monthly Returns</div>
 <div class="chartbox"><canvas id="kin-bars"></canvas></div>
 <div class="legend">
@@ -40,7 +40,7 @@ body{margin:0;background:var(--bg);font-family:'DM Sans',system-ui,-apple-system
 <script>
 (function(){
   var NAVY="#0D1F3C",MUTED="#9AACBE",STEEL="#5A7099",BORD="#e8e4dc",BG="#f6f4ef";
-  var labels=["Jul '26","Aug '26","Sep '26"], kdata=[-2.97,-2.88,-2.2], sdata=[3.47,-0.96,0.63];
+  var labels=["Jul '26","Aug '26","Sep '26"], kdata=[-2.97,-2.88,-2.07], sdata=[3.47,-0.96,0.97];
   var barLabelPlugin={id:"ackBarLabels",afterDatasetsDraw:function(chart){
     var ctx=chart.ctx;ctx.save();ctx.textAlign="center";
     ctx.font="9px DM Sans, system-ui, sans-serif";
